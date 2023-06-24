@@ -1,92 +1,126 @@
 <template>
-  <footer class="footer">
-    <div class="container footer__container">
-      <ul class="footer__list">
-        <li class="foooter__item">
-          <ul class="footer-info footer-info__list">
-            <li class="footer-info__item footer-info__item_logo">
-              <nuxt-link class="footer-info__logo" to="/">
-                <h2 class="footer-info-logo__title_left">SMM</h2>
-                <h2 class="footer-info-logo__title_right">
-                  Planeta
-                </h2></nuxt-link
-              >
-              <p class="footer-info-logo__desc">более 50000 блогеров</p>
-            </li>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <nuxt-link class="footer-logo" to="/">
+              <h2 class="footer-logo__title">SMM Planeta</h2>
+              <p class="footer-logo__desc">более 50000 блогеров</p>
+            </nuxt-link>
 
-            <li class="footer-info__item">
-              <a href="" class="footer-info__desc">Информация</a>
-            </li>
-
-            <li class="footer-info__item">
-              <a href="" class="footer-info__desc">Данные организации</a>
-            </li>
-
-            <li class="footer-info__item">
-              <a href="" class="footer-info__desc">Данные об оплате</a>
-            </li>
-
-            <li class="footer-info__item">
-              <a href="" class="footer-info__desc">Условия использования</a>
-            </li>
-
-            <li class="footer-info__item">
-              <a href="" class="footer-info__desc"
-                >Политика обработки персональных данных</a
-              >
-            </li>
-
-            <li class="footer-info__item">
-              <a href="" class="footer-info__desc"
-                >Оферта о заключении оказания услуг</a
-              >
-            </li>
-          </ul>
-        </li>
-
-        <li class="foooter__item">
-          <div class="footer-contacts">
-            <h4 class="footer-contacts__title">Связь с нами</h4>
-
-            <a
-              target="_blank"
-              href="https://yandex.ru/maps/213/moscow/house/aviamotornaya_ulitsa_59/Z04YcQVhQUAPQFtvfXt1cH5lYw==/?ll=37.721857%2C55.741267&z=16"
-              class="footer-contacts__adress footer-contacts__link"
-            >
-              Адрес: ул. Авиамоторная, д.59, помещение 21.2, Москва, Россия
-            </a>
-
-            <a href="tel:+74956468335" class="footer-contacts__link"
-              >Телефон:+7 495 646 83 35</a
-            >
-
-            <a href="mailto:info@smmplaneta.ru" class="footer-contacts__link"
-              >Email:info@smmplaneta.ru</a
-            >
+            <ul class="list-unstyled float-start links">
+              <li><a href="">Информация</a></li>
+              <li><a href="">Данные организации</a></li>
+              <li><a href="">Данные об оплате</a></li>
+              <li><a href="">Условия использования</a></li>
+              <li><a href="">Политика обработки персональных данных</a></li>
+              <li><a href="">Оферта о заключении оказания услуг</a></li>
+            </ul>
           </div>
-        </li>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Contacts</h3>
+            <address>
+              <a
+                target="_blank"
+                href="https://yandex.ru/maps/213/moscow/house/aviamotornaya_ulitsa_59/Z04YcQVhQUAPQFtvfXt1cH5lYw==/?ll=37.721857%2C55.741267&z=16"
+              >
+                Адрес: ул. Авиамоторная, д.59, помещение 21.2, Москва, Россия
+              </a>
+            </address>
+            <ul class="list-unstyled links">
+              <li>
+                <a href="tel:+74956468335">Телефон: +7 495 646 83 35</a>
+              </li>
 
-        <li class="foooter__item">
-          <div class="footer-subscribe">
-            <h3 class="footer-subscribe__title">Подписка</h3>
-            <div class="footer-subscribe__label">
-              Получайте специальные предложения и новости сервиса
-            </div>
-            <form action="#" autocomplete="" class="footer-subscribe__form">
-              <input
-                type="email"
-                name="email"
-                placeholder="mail@example.com"
-                class="footer-subscribe__input"
-              />
-              <button class="footer-subscribe__btn">
-                <span class="footer-subscribe__btn-arrow"></span>
-              </button>
-            </form>
+              <li>
+                <a href="mailto:info@smmplaneta.ru"
+                  >Email: info@smmplaneta.ru</a
+                >
+              </li>
+            </ul>
           </div>
-        </li>
-      </ul>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3>Links</h3>
+            <ul class="list-unstyled links">
+              <li><a href="">Our Vision</a></li>
+              <li><a href="">About us</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+
+            <ul class="list-unstyled social">
+              <li>
+                <a href=""><span class="icon-instagram"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="icon-twitter"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="icon-facebook"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="icon-linkedin"></span></a>
+              </li>
+              <li>
+                <a href=""><span class="icon-pinterest"></span></a>
+              </li>
+            </ul>
+
+            <!-- <div class="list-unstyled">
+              <p class="footer-subscribe__label">
+                Получайте специальные предложения и новости сервиса
+              </p>
+
+              <form action="#" autocomplete="" class="footer-subscribe__form">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="mail@example.com"
+                  class="footer-subscribe__input"
+                />
+                <button class="footer-subscribe__btn">
+                  <span class="footer-subscribe__btn-arrow"></span>
+                </button>
+              </form>
+            </div> -->
+          </div>
+          <!-- /.widget -->
+        </div>
+        <!-- /.col-lg-4 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-12 text-center">
+          <!-- 
+              **==========
+              NOTE: 
+              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+              **==========
+            -->
+
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            . All Rights Reserved. &mdash; Designed with love by
+            <a href="https://untree.co">Untree.co</a>
+            <!-- License information: https://untree.co/license/ -->
+          </p>
+        </div>
+      </div>
     </div>
+    <!-- /.container -->
   </footer>
 </template>
 
@@ -97,152 +131,33 @@ export default {
 </script>
 
 <style scoped>
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.footer {
-  margin-top: 3.3334rem;
+.footer-logo {
+  text-decoration: none;
 }
-
-.footer__container {
-  padding: 0 2.5556rem;
-}
-
-.footer__list {
-  background-color: #4c4c4c4b;
-  padding: 2.2222rem 2.1111rem;
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
-  border-radius: 1.6667rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.footer-info {
-  max-width: 15rem;
-  width: 100%;
-  margin-right: 12rem;
-}
-
-.footer-info__item:not(:last-child) {
-  margin-bottom: 0.5rem;
-}
-
-.footer-info__item:first-child {
-  margin-bottom: 1.1111rem;
-}
-
-.footer-info__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.footer-info-logo__title_left {
+.footer-logo__title {
+  margin-bottom: 0;
   font-size: 1.4em;
   line-height: 1.4rem;
   color: #af2500;
   text-shadow: 4px 1px 6px #d3792b;
-}
-.footer-info-logo__title_right {
-  font-size: 1.4rem;
-  line-height: 1.4rem;
-  color: #af2500;
-  text-shadow: 4px 1px 6px rgba(13, 13, 13, 0.5);
   -webkit-transition: text-shadow 0.3s ease-in;
   -o-transition: text-shadow 0.3s ease-in;
   transition: text-shadow 0.3s ease-in;
 }
 
-.footer-info__logo:hover > .footer-info-logo__title_right,
-.footer-info__logo:active > .footer-info-logo__title_right {
-  text-shadow: 4px 1px 6px #d3792b;
+.footer-logo:hover > .footer-logo__title,
+.footer-info__logo:active > .footer-logo__title {
+  text-shadow: 4px 1px 6px #ff5900;
   -webkit-transition: text-shadow 0.2s ease-in;
   -o-transition: text-shadow 0.2s ease-in;
   transition: text-shadow 0.2s ease-in;
 }
 
-.footer-info-logo__desc {
-  padding-top: 0.1111rem;
+.footer-logo__desc {
   font-weight: 500;
   font-size: 0.8rem;
   color: #0d0d0d;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.footer-info__desc {
-  font-size: 0.8889rem;
-  color: #0d0d0d;
-  -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
-}
-
-.footer-info__desc:hover,
-.footer-info__desc:active {
-  color: #ff3600;
-  -webkit-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
-  transition: color 0.2s ease-in;
-}
-
-.footer-contacts {
-  margin-top: 1.3rem;
-  max-width: 20rem;
-  margin-right: 2.7778rem;
-}
-
-.footer-contacts__title {
-  margin-bottom: 1rem;
-  font-weight: 500;
-  font-size: 1rem;
-  color: #0d0d0d;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.footer-contacts__link {
-  display: inline-block;
-  margin-bottom: 9px;
-  font-size: 0.8889rem;
-  color: #0d0d0d;
-  -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
-}
-
-.footer-contacts__link:hover,
-.footer-contacts__link:active {
-  color: #ff3600;
-  -webkit-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
-  transition: color 0.2s ease-in;
-}
-
-.footer-contacts__adress {
-  margin-bottom: 1.4445rem;
-  font-size: 0.8889rem;
-}
-
-.footer-subscribe {
-  margin-top: 1.3rem;
-  max-width: 20rem;
-}
-.footer-subscribe__title {
-  font-weight: 500;
-  font-size: 1rem;
-  color: #0d0d0d;
-  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-bottom: 1rem;
 }
 
 .footer-subscribe__label {
@@ -300,40 +215,5 @@ export default {
   border-top: 0.2222rem solid #ffffff;
   border-right: 0.2222rem solid #ffffff;
   transform: rotate(45deg);
-}
-
-@media (max-width: 1000px) {
-  .footer-info {
-    margin-right: 9rem;
-  }
-}
-
-@media (max-width: 888px) {
-  .footer-subscribe {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    margin-top: 23px;
-    margin-bottom: 23px;
-  }
-
-  .footer__container {
-    padding: 0;
-  }
-
-  .footer-info {
-    max-width: 10rem;
-    width: 100%;
-    margin-right: 6rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .footer-info {
-    margin-right: 3rem;
-  }
 }
 </style>
