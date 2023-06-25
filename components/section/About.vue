@@ -1,20 +1,20 @@
 <template>
-  <section class="home">
-    <div class="home__container container">
-      <div class="home__logo">
-        <div class="home-logo__title">
-          <h1 class="home-logo__title_left">SMM</h1>
-          <h1 class="home-logo__title_right">Planeta</h1>
+  <section class="about">
+    <div class="about__container container">
+      <div class="about__logo">
+        <div class="about-logo__title">
+          <h1 class="about-logo__title_left">SMM</h1>
+          <h1 class="about-logo__title_right">Planeta</h1>
         </div>
-        <h3 class="home-logo__desc">решения и возможности</h3>
+        <h3 class="about-logo__desc">решения и возможности</h3>
       </div>
 
-      <ul class="home-check__list">
-        <li class="home-check__item">Поиск автора</li>
-        <li class="home-check__item">Открытие сообщества</li>
-        <li class="home-check__item">Захват контента</li>
-        <li class="home-check__item">Адаптация и подбор персонала</li>
-        <li class="home-check__item">Управляй этим</li>
+      <ul class="about-check__list">
+        <li class="about-check__item">Поиск автора</li>
+        <li class="about-check__item">Открытие сообщества</li>
+        <li class="about-check__item">Захват контента</li>
+        <li class="about-check__item">Адаптация и подбор персонала</li>
+        <li class="about-check__item">Управляй этим</li>
       </ul>
     </div>
   </section>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "About",
 };
 </script>
 
@@ -34,17 +34,17 @@ export default {
 * Browsers: last 4 version
 */
 
-.home {
+.about {
   margin-top: 8.3333rem;
   margin-bottom: 7.7778rem;
 }
 
-.home__container {
+.about__container {
   position: relative;
   padding: 0 4.2778rem;
 }
 
-.home__container::before {
+.about__container::before {
   content: "";
   position: absolute;
   z-index: -10;
@@ -74,7 +74,7 @@ export default {
   filter: blur(50px);
 }
 
-.home__container::after {
+.about__container::after {
   content: "";
   position: absolute;
   z-index: -9;
@@ -90,12 +90,12 @@ export default {
   filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.25));
 }
 
-.home__logo {
+.about__logo {
   margin-bottom: 4rem;
   cursor: default;
 }
 
-.home-logo__title {
+.about-logo__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +104,7 @@ export default {
   align-items: center;
 }
 
-.home-logo__title_left {
+.about-logo__title_left {
   font-weight: 400;
   font-size: 2.2222rem;
   line-height: 2.6111rem;
@@ -112,7 +112,7 @@ export default {
   text-shadow: 4px 1px 6px #d3792b;
 }
 
-.home-logo__title_right {
+.about-logo__title_right {
   font-weight: 400;
   font-size: 2.2222rem;
   line-height: 2.6111rem;
@@ -123,15 +123,15 @@ export default {
   transition: text-shadow 0.4s ease-in;
 }
 
-.home-logo__title:hover > .home-logo__title_right,
-.home-logo__title:active > .home-logo__title_right {
+.about-logo__title:hover > .about-logo__title_right,
+.about-logo__title:active > .about-logo__title_right {
   text-shadow: 4px 1px 6px #d3792b;
   -webkit-transition: text-shadow 0.2s ease-in;
   -o-transition: text-shadow 0.2s ease-in;
   transition: text-shadow 0.2s ease-in;
 }
 
-.home-logo__desc {
+.about-logo__desc {
   font-weight: 400;
   font-size: 1.3333rem;
   line-height: 1.5556rem;
@@ -139,11 +139,11 @@ export default {
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.home-check__list {
+.about-check__list {
   margin-bottom: 4.7778rem;
 }
 
-.home-check__item {
+.about-check__item {
   position: relative;
   padding-left: 3.2422222rem;
   min-height: 1.6667rem;
@@ -152,11 +152,11 @@ export default {
   color: #0d0d0d;
 }
 
-.home-check__item:not(:last-child) {
+.about-check__item:not(:last-child) {
   margin-bottom: 1.1111rem;
 }
 
-.home-check__item::before {
+.about-check__item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -167,14 +167,14 @@ export default {
 }
 
 @media (max-width: 960px) {
-  .home__container::before {
+  .about__container::before {
     width: 600px;
     height: 600px;
     top: -125px;
     right: -155px;
   }
 
-  .home__container::after {
+  .about__container::after {
     width: 400px;
     height: 500px;
     top: -17px;
@@ -183,17 +183,17 @@ export default {
 }
 
 @media (max-width: 780px) {
-  .home {
+  .about {
     margin-top: 53px;
   }
-  .home__container::before {
+  .about__container::before {
     width: 500px;
     height: 500px;
     top: -05px;
     right: -120px;
   }
 
-  .home__container::after {
+  .about__container::after {
     width: 300px;
     height: 400px;
     top: 50px;
@@ -202,82 +202,82 @@ export default {
 }
 
 @media (max-width: 600px) {
-  .home__container::before {
+  .about__container::before {
     width: 450px;
     height: 450px;
     top: -05px;
     right: -120px;
   }
 
-  .home__container::after {
+  .about__container::after {
     width: 250px;
     height: 350px;
     top: 50px;
     right: -30px;
   }
 
-  .home-check__list {
+  .about-check__list {
     margin-bottom: 87px;
     max-width: 165px;
   }
 
-  .home-check__item {
+  .about-check__item {
     padding-left: 24px;
     min-height: 15px;
     line-height: 15px;
   }
 
-  .home-check__item:not(:last-child) {
+  .about-check__item:not(:last-child) {
     margin-bottom: 10px;
   }
 
-  .home-check__item::before {
+  .about-check__item::before {
     width: 15px;
     height: 15px;
   }
 }
 
 @media (max-width: 440px) {
-  .home__container {
+  .about__container {
     padding: 0 15px;
   }
 
-  .home__container::before {
+  .about__container::before {
     width: 217px;
     height: 305px;
     right: -55px;
     top: -15px;
   }
 
-  .home__container::after {
+  .about__container::after {
     width: 205px;
     height: 230px;
     right: -52px;
     top: 3px;
   }
 
-  .home__logo {
+  .about__logo {
     margin-bottom: 22px;
   }
 
-  .home-logo__title_left {
+  .about-logo__title_left {
     font-size: 20px;
     line-height: 23px;
   }
 
-  .home-logo__title_right {
+  .about-logo__title_right {
     font-size: 20px;
     line-height: 23px;
   }
 
-  .home-logo__desc {
+  .about-logo__desc {
     font-size: 14px;
     line-height: 16px;
   }
 }
 
 @media (max-width: 320px) {
-  .home__container {
+  .about__container {
     padding: 0;
   }
 }

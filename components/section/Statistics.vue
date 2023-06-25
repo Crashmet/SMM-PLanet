@@ -1,6 +1,6 @@
 <template>
   <section class="statistics">
-    <div class="statistics__container container">
+    <div class="statistics__container">
       <ul class="statistics__list">
         <li class="statistics__item">
           <p class="statistics-item__top">Охват</p>

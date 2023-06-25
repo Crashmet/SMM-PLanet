@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close">
@@ -14,7 +14,7 @@
         <div class="menu-bg-wrap">
           <div class="site-navigation">
             <nuxt-link class="logo m-0 float-start" to="/">
-              SMM Planeta
+              SMM Planeta <span class="logo-dot">.</span>
             </nuxt-link>
 
             <ul
@@ -100,4 +100,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.header {
+  margin-bottom: 7rem;
+}
+
+.logo-dot {
+  color: var(--bs-orange);
+}
+</style>

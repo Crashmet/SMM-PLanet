@@ -1,24 +1,43 @@
 <template>
-  <section class="search">
-    <div class="search__container container">
-      <div class="search__bar">
-        <div class="search-bar__line">
-          <input
-            class="search-line__input"
-            autocomplete="off"
-            type="text"
-            v-model.trim="searchInput"
-          />
-          <button class="search-line__btn" @click.prevent="handlerClickSearch">
-            <span class="search-line-btn__text">поиск</span>
-          </button>
+  <div class="hero">
+    <section class="search">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center">
+            <h1 class="heading" data-aos="fade-up">
+              Easiest way to find your dream blogger
+            </h1>
+            <form
+              action="#"
+              class="narrow-w form-search d-flex align-items-stretch mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <input
+                type="text"
+                class="form-control px-4"
+                placeholder="Your nickname or name bloggers."
+                autocomplete="off"
+                v-model.trim="searchInput"
+              />
+              <button
+                type="submit"
+                class="btn btn-primary"
+                @click.prevent="handlerClickSearch"
+              >
+                Search
+              </button>
+            </form>
+            <template v-if="searchRequest">
+              <p class="search-bar__desc">
+                Выдача по слову «{{ searchRequest }}»
+              </p>
+            </template>
+          </div>
         </div>
-        <template v-if="searchRequest">
-          <p class="search-bar__desc">Выдача по слову «{{ searchRequest }}»</p>
-        </template>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -101,122 +120,9 @@ export default {
 * Browsers: last 4 version
 */
 
-.search {
-  margin-top: 3.2222rem;
-}
-
-.search__container {
-  padding: 0 4.4444rem;
-}
-
-.search__bar {
-  margin-bottom: 4.4445rem;
-}
-
-.search-bar__line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-
-  border-radius: 20px;
-  background: #ffffff;
-  -webkit-filter: drop-shadow(5px 5px 7px rgba(255, 54, 0, 0.43));
-  filter: drop-shadow(5px 5px 7px rgba(255, 54, 0, 0.43));
-  -webkit-box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25);
-}
-
 .search-bar__desc {
   margin-top: 1.1111rem;
   margin-left: 1.4444rem;
   color: rgba(13, 13, 13, 0.61);
-}
-
-.search-line__input {
-  padding-left: 19.9998px;
-  width: 100%;
-  height: 2.5rem;
-  border: none;
-  border-radius: 20px;
-  background: #ffffff;
-  font-size: 1rem;
-  line-height: 1.1667rem;
-}
-
-.search-line__btn {
-  right: 0;
-  bottom: 0;
-  padding: 0.7778rem 4.3333rem 0.7778rem;
-  background: rgba(255, 54, 0, 0.8);
-  border-radius: 20px;
-  -webkit-transition: background 0.2s ease-in;
-  -o-transition: background 0.2s ease-in;
-  transition: background 0.2s ease-in;
-}
-
-.search-line__btn:hover,
-.search-line__btn:active {
-  background: rgba(255, 54, 0, 0.91);
-}
-
-.search-line-btn__text {
-  display: block;
-  font-weight: 700;
-  font-size: 1rem;
-  /* line-height: 1.1667rem; */
-  text-align: center;
-  color: #ffffff;
-}
-
-@media (max-width: 960px) {
-  .search-line__btn {
-    padding: 0.7778rem 3rem 0.7778rem;
-  }
-
-  .search-line-btn__text {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .search {
-    margin-top: 23px;
-  }
-
-  .search__container {
-    padding: 0 20px;
-  }
-
-  .search__bar {
-    margin-bottom: 20px;
-  }
-
-  .search-bar__desc {
-    margin-top: 5px;
-    margin-left: 20px;
-  }
-
-  .search-line__input {
-    height: 28px;
-  }
-
-  .search-line__btn {
-    padding: 6.5px 18px 6.5px;
-  }
-
-  .search-line-btn__text {
-    font-size: 14px;
-    line-height: 16px;
-    padding-bottom: 1.5px;
-  }
-}
-
-@media (max-width: 320px) {
-  .search__container {
-    padding: 0;
-  }
 }
 </style>

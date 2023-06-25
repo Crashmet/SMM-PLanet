@@ -3,14 +3,15 @@
     <div class="container">
       <div class="row">
         <!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-left">
           <div class="widget">
-            <nuxt-link class="footer-logo" to="/">
-              <h2 class="footer-logo__title">SMM Planeta</h2>
-              <p class="footer-logo__desc">более 50000 блогеров</p>
-            </nuxt-link>
-
             <ul class="list-unstyled float-start links">
+              <li>
+                <nuxt-link class="footer-logo" to="/">
+                  <h2 class="footer-logo__title">SMM Planeta</h2>
+                  <p class="footer-logo__desc">более 50000 блогеров</p>
+                </nuxt-link>
+              </li>
               <li><a href="">Информация</a></li>
               <li><a href="">Данные организации</a></li>
               <li><a href="">Данные об оплате</a></li>
@@ -131,9 +132,14 @@ export default {
 </script>
 
 <style scoped>
+.col-left {
+  margin-bottom: 30px;
+}
 .footer-logo {
   text-decoration: none;
+  margin-bottom: 15px;
 }
+
 .footer-logo__title {
   margin-bottom: 0;
   font-size: 1.4em;

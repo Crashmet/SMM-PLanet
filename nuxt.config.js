@@ -28,6 +28,7 @@ export default {
       },
       { rel: "stylesheet", href: "/fonts/icomoon/style.css" },
       { rel: "stylesheet", href: "/fonts/flaticon/font/flaticon.css" },
+      { rel: "stylesheet", href: "/css/normalize.css" },
       { rel: "stylesheet", href: "/css/tiny-slider.css" },
       { rel: "stylesheet", href: "/css/aos.css" },
       { rel: "stylesheet", href: "/css/style.css" },
@@ -44,7 +45,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#ff3600" },
+  loading: { color: "#f96f59" },
   /*
    ** Global CSS
    */

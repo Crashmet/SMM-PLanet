@@ -4,7 +4,7 @@
 
     <main>
       <Search />
-      <Home />
+      <About />
       <Statistics />
     </main>
 
@@ -15,7 +15,7 @@
 <script>
 import Header from "@/components/Header.vue";
 import Search from "@/components/section/Search.vue";
-import Home from "@/components/section/Home.vue";
+import About from "@/components/section/About.vue";
 import Statistics from "@/components/section/Statistics.vue";
 import Footer from "@/components/Footer.vue";
 
@@ -27,7 +27,7 @@ export default {
   components: {
     Header,
     Search,
-    Home,
+    About,
     Statistics,
     Footer,
   },
