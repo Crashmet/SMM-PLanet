@@ -322,7 +322,7 @@ export default {
   font-weight: 700;
   font-size: 1.7778rem;
   line-height: 2.1111rem;
-  color: #ff3600;
+  color: var(--bs-secondary);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -357,8 +357,8 @@ export default {
   padding: 6px 30px;
   width: 100%;
   height: 33px;
-  background: #ffffff;
-  border: 1px solid rgba(255, 54, 0, 0.7);
+  background: transparent;
+  border: 1px solid var(--bs-secondary);
   -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -367,18 +367,18 @@ export default {
 .register__validation {
   margin-left: 1.1111rem;
   margin-top: 0.3889rem;
-  color: rgba(255, 54, 0, 1);
+  color: var(--bs-orange);
 }
 
 .register__submit-btn {
   padding: 7px 34px;
-  background: rgba(255, 54, 0, 0.8);
+  background: var(--bs-secondary);
   border-radius: 20px;
 }
 
 .register__submit-btn:hover,
 .register__submit-btn:active {
-  background: rgba(255, 54, 0, 0.91);
+  background: var(--bs-success);
 }
 
 .submit-btn__text {
@@ -463,7 +463,7 @@ export default {
   top: 0.1667rem;
   height: 1rem;
   width: 1rem;
-  border: 0.1111rem solid rgba(255, 54, 0, 0.7);
+  border: 0.1111rem solid var(--bs-secondary);
   background: #fff;
 }
 
@@ -480,7 +480,7 @@ export default {
 }
 
 .item-radio__input:checked + .item-radio__label:after {
-  background-color: rgba(255, 54, 0, 0.7);
+  background-color: var(--bs-secondary);
 }
 
 /* ******** MODAL ******* */
@@ -499,9 +499,7 @@ export default {
   padding: 1.6667rem 3.8889rem;
   border-radius: 1.1111rem;
   background: #ffffff;
-  -webkit-filter: drop-shadow(5px 5px 7px rgba(255, 54, 0, 0.43));
-  filter: drop-shadow(5px 5px 7px rgba(255, 54, 0, 0.43));
-  -webkit-box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25);
+
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -527,7 +525,7 @@ export default {
 .register-modal__btn-home {
   padding: 0.5rem 1.8889rem 0.5556rem;
   border-radius: 20px;
-  background: rgba(255, 54, 0, 0.8);
+  background: var(--bs-secondary);
   -webkit-transition: background 0.2s ease-in;
   -o-transition: background 0.2s ease-in;
   transition: background 0.2s ease-in;
@@ -535,7 +533,7 @@ export default {
 
 .register-modal__btn-home:hover,
 .register-modal__btn-home:active {
-  background: rgba(255, 54, 0, 0.91);
+  background: var(--bs-success);
   -webkit-transition: background 0.2s ease-in;
   -o-transition: background 0.2s ease-in;
   transition: background 0.2s ease-in;

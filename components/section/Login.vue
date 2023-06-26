@@ -172,7 +172,7 @@ export default {
   font-weight: 700;
   font-size: 1.7778rem;
   line-height: 2.1111rem;
-  color: #ff3600;
+  color: var(--bs-secondary);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -200,8 +200,8 @@ export default {
   padding: 6px 30px;
   width: 100%;
   height: 33px;
-  background: #ffffff;
-  border: 1px solid rgba(255, 54, 0, 0.7);
+  background: transparent;
+  border: 1px solid var(--bs-secondary);
   -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -210,18 +210,18 @@ export default {
 .login__validation {
   margin-left: 1.1111rem;
   margin-top: 0.3889rem;
-  color: rgba(255, 54, 0, 1);
+  color: var(--bs-orange);
 }
 
 .login__submit-btn {
   padding: 7px 54px;
-  background: rgba(255, 54, 0, 0.8);
+  background: var(--bs-secondary);
   border-radius: 20px;
 }
 
 .login__submit-btn:hover,
 .login__submit-btn:active {
-  background: rgba(255, 54, 0, 0.91);
+  background: var(--bs-success);
 }
 
 .submit-btn__text {

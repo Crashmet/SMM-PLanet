@@ -17,7 +17,7 @@
           <span class="caption text-black-50"># Блогеров</span>
         </div>
       </div>
-      <div class="counter-list" data-aos="fade-up" data-aos-delay="500">
+      <div class="counter-list" data-aos="fade-up" data-aos-delay="200">
         <div class="counter-wrap mb-lg-0">
           <span class="number"
             ><span class="countup text-primary">7236</span></span

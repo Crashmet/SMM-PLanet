@@ -1,6 +1,6 @@
 <template>
   <section class="search-result">
-    <div class="search-result__container container">
+    <div class="search-result__container">
       <nav v-if="count > 0" class="search__nav">
         <ul class="search-nav__list">
           <li
@@ -19,38 +19,47 @@
         </ul>
       </nav>
 
-      <ul class="search-result__list-cards">
+      <ul class="search-result__list-cards row">
         <li
-          class="search-result__item-card item-card"
+          class="property-item col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3"
           v-for="item in searchResult"
           :key="item.id"
           @click="handlerClickCards(item)"
         >
-          <div class="item-card__img"></div>
+          <div class="item-card__img">
+            <img src="#" alt="Image-card" class="img-fluid" />
+          </div>
 
-          <ul class="item-card__list-description">
-            <li class="item-card__item-description item-description">
-              {{ item.social }}: {{ item.nickname }}
-            </li>
-            <li class="item-card__item-description item-description">
-              Кол-во подписчиков: {{ item.subscribers }}
-            </li>
-            <li class="item-card__item-description item-description">
+          <div class="property-content">
+            <div class="d-block mb-2 text-black-50">
+              Подписчики:
+              <div class="price mb-2">
+                <span>{{ item.subscribers }}</span>
+              </div>
+            </div>
+            <div>
+              <span class="d-block mb-2 text-black-50"
+                >Дата создания: {{ item.created }}</span
+              >
+              <span class="d-block mb-2 text-black-50">
+                {{ item.social_network.name }} - nickname:</span
+              >
+              <span class="city d-block mb-3">{{ item.nickname }}</span>
+            </div>
+
+            <div class="item-card__item-description item-description">
               Цена за пост:
               {{ item.price_for_post ? item.price_for_post : 0 }} руб.
-            </li>
-            <li class="item-card__item-description item-description">
+            </div>
+            <div class="item-card__item-description item-description">
               Цена за сторис:
               {{ item.price_for_stories ? item.price_for_stories : 0 }} руб.
-            </li>
-            <li class="item-card__item-description item-description">
+            </div>
+            <div class="item-card__item-description item-description">
               Цена за рилс:
               {{ item.price_for_reels ? item.price_for_reels : 0 }} руб.
-            </li>
-            <li class="item-card__item-description item-description">
-              Дата создания: {{ item.created }}
-            </li>
-          </ul>
+            </div>
+          </div>
         </li>
       </ul>
 
@@ -117,13 +126,13 @@
           {{ activePage + 1 }}
         </button>
 
-        <button
+        <!-- <button
           v-if="countPages > activePage + 2"
           @click="handlerClickActivePage"
           class="page-numbers__btn"
         >
           {{ activePage + 2 }}
-        </button>
+        </button> -->
 
         <span
           v-if="countPages > activePage + 3 && countPages > 3"
@@ -349,6 +358,8 @@ export default {
   padding: 0 4.4444rem;
 }
 
+/* **** SEARCH-NAV **** */
+
 .search__nav {
   margin-bottom: 2.2222rem;
 }
@@ -392,7 +403,7 @@ export default {
 }
 
 .search-nav__item_active {
-  color: rgba(255, 54, 0, 0.8);
+  color: var(--bs-orange);
 }
 
 .search-nav__item_arrow::after {
@@ -402,7 +413,7 @@ export default {
   right: 0.6111rem;
   width: 1.0556rem;
   height: 1.0556rem;
-  background-image: url("@/assets/image/arrow.svg");
+  background-image: url("@/static/img/arrow.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -432,29 +443,15 @@ export default {
   padding: 0.5556rem 2.2222rem 0.5556rem 1.6111rem;
 }
 
-.search-result__list-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
+/* **** CARDS ****  */
 
-.search-result__item-card {
-  max-width: 11.1111rem;
-  margin-bottom: 3.1667rem;
-  cursor: pointer;
-}
-
-.search-result__item-card:not(:nth-child(4n)) {
-  margin-right: 4.4444rem;
+.search-result__container {
+  margin-bottom: 50px;
 }
 
 .item-card__img {
   margin-bottom: 0.9444rem;
-  width: 11.1111rem;
-  height: 11.1111rem;
+  height: 155.5554px;
   background: #d9d9d9;
 }
 
@@ -486,10 +483,10 @@ export default {
   padding: 0.4444rem;
   width: 2.3333rem;
   height: 2.3333rem;
-  color: rgba(255, 54, 0, 0.8);
+  color: var(--bs-secondary);
   background-color: #fff;
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 54, 0, 0.8);
+  border: 1.5px solid var(--bs-secondary);
   cursor: pointer;
 }
 
@@ -503,13 +500,14 @@ export default {
 }
 
 .page-numbers__btn_selected {
-  background-color: rgba(255, 54, 0, 0.8);
+  background-color: var(--bs-success);
   color: #fff;
 }
 
 /* **** NOT FOUND ****  */
 
 .search-result__not-found {
+  text-align: center;
   margin-bottom: 8.3333rem;
   font-size: 1.2222rem;
 }
@@ -517,35 +515,11 @@ export default {
 @media (min-width: 980px) {
   .search-pagination__btn:hover,
   .page-numbers__btn:hover {
-    background-color: rgba(255, 54, 0, 0.8);
+    background-color: var(--bs-success);
     color: #fff;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-  }
-}
-
-@media (max-width: 1199px) {
-  .search-result__item-card:nth-child(4n) {
-    margin-right: 0;
-  }
-
-  .search-result__item-card:nth-child(even) {
-    margin-right: 40px;
-    margin-bottom: 32px;
-  }
-
-  .search-result__item-card:nth-child(odd) {
-    margin-right: 40px;
-    margin-bottom: 32px;
-  }
-}
-
-@media (max-width: 960px) {
-  .item-card__img {
-    width: 140px;
-    height: 140px;
-    background: #d9d9d9;
   }
 }
 
@@ -574,18 +548,8 @@ export default {
     margin-right: 15px;
   }
 
-  .search-result__item-card:nth-child(even) {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-
   .item-card__item-description:not(:last-child) {
     margin-bottom: 2px;
-  }
-
-  .search-pagination__btn {
-    width: 30.9994px;
-    height: 30.9994px;
   }
 }
 

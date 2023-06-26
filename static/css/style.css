@@ -2560,8 +2560,8 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #005555;
-  border-color: #005555; }
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary); }
   .btn-secondary:hover {
     color: #fff;
     background-color: #004848;
@@ -2585,8 +2585,8 @@ textarea.form-control-lg {
       box-shadow: 0 0 0 0.25rem rgba(38, 111, 111, 0.5); }
   .btn-secondary:disabled, .btn-secondary.disabled {
     color: #fff;
-    background-color: #005555;
-    border-color: #005555; }
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary); }
 
 .btn-success {
   color: #fff;
@@ -2792,26 +2792,26 @@ textarea.form-control-lg {
     background-color: transparent; }
 
 .btn-outline-secondary {
-  color: #005555;
-  border-color: #005555; }
+  color: var(--bs-secondary);
+  border-color: var(--bs-secondary); }
   .btn-outline-secondary:hover {
     color: #fff;
-    background-color: #005555;
-    border-color: #005555; }
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary); }
   .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
     -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 85, 85, 0.5);
     box-shadow: 0 0 0 0.25rem rgba(0, 85, 85, 0.5); }
   .btn-check:checked + .btn-outline-secondary,
   .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
     color: #fff;
-    background-color: #005555;
-    border-color: #005555; }
+    background-color: var(--bs-secondary);
+    border-color: var(--bs-secondary); }
     .btn-check:checked + .btn-outline-secondary:focus,
     .btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
       -webkit-box-shadow: 0 0 0 0.25rem rgba(0, 85, 85, 0.5);
       box-shadow: 0 0 0 0.25rem rgba(0, 85, 85, 0.5); }
   .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-    color: #005555;
+    color: var(--bs-secondary);
     background-color: transparent; }
 
 .btn-outline-success {
@@ -5761,7 +5761,7 @@ textarea.form-control-lg {
     color: #001a3b; }
 
 .link-secondary {
-  color: #005555; }
+  color: var(--bs-secondary); }
   .link-secondary:hover, .link-secondary:focus {
     color: #004444; }
 
@@ -6147,7 +6147,7 @@ textarea.form-control-lg {
   border-color: #00204a !important; }
 
 .border-secondary {
-  border-color: #005555 !important; }
+  border-color: var(--bs-secondary) !important; }
 
 .border-success {
   border-color: #198754 !important; }
@@ -9654,7 +9654,7 @@ textarea {
   transform: translate(-50%, -50%); }
 
 .menu-bg-wrap {
-  background-color: #005555;
+  background-color: var(--bs-secondary);
   padding: 20px 30px;
   position: relative;
   float: left;
@@ -9717,7 +9717,7 @@ textarea {
   .hero .form-search .form-control {
     margin-right: 10px; }
   .hero .form-search .btn {
-    background-color: #005555;
+    background-color: var(--bs-secondary);
     padding-left: 30px;
     padding-right: 30px;
     color: #fff; }
@@ -9798,7 +9798,7 @@ textarea {
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   .btn.btn-primary {
-    background: #005555;
+    background: var(--bs-secondary);
     color: #fff; }
   .btn:hover {
     top: -2px;
@@ -9898,7 +9898,7 @@ textarea {
   font-size: 13px;
   position: relative;
   width: 100%;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
   z-index: 2; }
@@ -9907,7 +9907,7 @@ textarea {
     font-weight: 700;
     color: #000; }
   .property-item .property-content .price {
-    color: #005555; }
+    color: var(--bs-secondary); }
     .property-item .property-content .price span {
       position: relative;
       padding-bottom: 4px;
@@ -9919,7 +9919,7 @@ textarea {
         height: 2px;
         left: 0;
         bottom: 0;
-        background-color: #005555; }
+        background-color: var(--bs-secondary); }
   .property-item .property-content .specs {
     font-size: 18px; }
     .property-item .property-content .specs .caption {
@@ -10284,7 +10284,7 @@ nav[aria-label="breadcrumb"] li:before {
     width: 100%;
     bottom: 0;
     height: 2px;
-    background-color: #005555;
+    background-color: var(--bs-secondary);
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease; }

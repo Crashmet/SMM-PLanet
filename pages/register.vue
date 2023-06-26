@@ -2,9 +2,7 @@
   <div class="register-page">
     <Header />
     <main>
-      <Search />
       <Register />
-      <Statistics />
     </main>
     <Footer />
   </div>

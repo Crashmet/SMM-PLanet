@@ -2,9 +2,7 @@
   <div class="login-page">
     <Header />
     <main>
-      <Search />
       <Login />
-      <Statistics />
     </main>
     <Footer />
   </div>

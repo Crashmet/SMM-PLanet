@@ -22,22 +22,22 @@
             >
               <li class="active"><nuxt-link to="/"> Home </nuxt-link></li>
               <li class="has-children">
-                <a href="">Properties</a>
+                <a>Properties</a>
                 <ul class="dropdown">
-                  <li><a href="">Buy Property</a></li>
-                  <li><a href="">Sell Property</a></li>
+                  <li><a>Buy Property</a></li>
+                  <li><a>Sell Property</a></li>
                   <li class="has-children">
-                    <a href="">Dropdown</a>
+                    <a>Dropdown</a>
                     <ul class="dropdown">
-                      <li><a href="">Sub Menu One</a></li>
-                      <li><a href="">Sub Menu Two</a></li>
-                      <li><a href="">Sub Menu Three</a></li>
+                      <li><a>Sub Menu One</a></li>
+                      <li><a>Sub Menu Two</a></li>
+                      <li><a>Sub Menu Three</a></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact Us</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact Us</a></li>
               <template v-if="!sessionid">
                 <li>
                   <nuxt-link to="register">Зарегистрироваться</nuxt-link>

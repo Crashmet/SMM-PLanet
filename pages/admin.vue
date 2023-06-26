@@ -2,9 +2,7 @@
   <div class="admin-page">
     <Header />
     <main>
-      <Search />
       <Admin />
-      <Statistics />
     </main>
     <Footer />
   </div>

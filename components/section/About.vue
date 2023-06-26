@@ -40,7 +40,7 @@ export default {
 
 .about__container {
   position: relative;
-  padding: 0 6rem;
+  padding: 0 84px;
 }
 
 .about__container::before {
@@ -154,6 +154,10 @@ export default {
 }
 
 @media (max-width: 1200px) {
+  .about__container {
+    padding: 0 3rem;
+  }
+
   .about__container::after {
     width: 500px;
   }
@@ -175,11 +179,6 @@ export default {
 @media (max-width: 780px) {
   .about {
     margin-top: 2.8571rem;
-  }
-
-  .about__container {
-    position: relative;
-    padding: 0 3rem;
   }
 
   .about__container::before {
