@@ -35,13 +35,12 @@ export default {
 */
 
 .about {
-  margin-top: 8.3333rem;
-  margin-bottom: 7.7778rem;
+  margin-top: 4rem;
 }
 
 .about__container {
   position: relative;
-  padding: 0 4.2778rem;
+  padding: 0 6rem;
 }
 
 .about__container::before {
@@ -51,24 +50,12 @@ export default {
   width: 785px;
   height: 765px;
   top: -152px;
-  right: -195px;
+  right: 0%;
   border-radius: 50%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(5.73%, rgba(255, 118, 0, 0.83)),
-    color-stop(69.27%, rgba(255, 54, 0, 0.53))
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(255, 118, 0, 0.83) 5.73%,
-    rgba(255, 54, 0, 0.53) 69.27%
-  );
   background: linear-gradient(
     180deg,
-    rgba(255, 118, 0, 0.83) 5.73%,
-    rgba(255, 54, 0, 0.53) 69.27%
+    rgba(255, 118, 0, 0.7) 5.73%,
+    rgba(255, 54, 0, 0.4) 69.27%
   );
   -webkit-filter: blur(50px);
   filter: blur(50px);
@@ -80,9 +67,9 @@ export default {
   z-index: -9;
   width: 522px;
   height: 612px;
-  top: -67px;
-  right: 18px;
-  background-image: url("../../assets/image/hand-mobile.png");
+  top: 0px;
+  right: 7%;
+  background-image: url("@/static/img/hero-img.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
@@ -91,7 +78,7 @@ export default {
 }
 
 .about__logo {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   cursor: default;
 }
 
@@ -163,46 +150,60 @@ export default {
   top: 0;
   width: 1.6667rem;
   height: 1.6667rem;
-  background: url("../../assets/image/checkmark.svg") 0 0 / contain no-repeat;
+  background: url("@/static/img/checkmark.svg") 0 0 / contain no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .about__container::after {
+    width: 500px;
+  }
 }
 
 @media (max-width: 960px) {
   .about__container::before {
-    width: 600px;
-    height: 600px;
-    top: -125px;
-    right: -155px;
+    width: 710px;
+    height: 710px;
   }
 
   .about__container::after {
+    top: 22%;
     width: 400px;
     height: 500px;
-    top: -17px;
-    right: 0;
   }
 }
 
 @media (max-width: 780px) {
   .about {
-    margin-top: 53px;
+    margin-top: 2.8571rem;
   }
+
+  .about__container {
+    position: relative;
+    padding: 0 3rem;
+  }
+
   .about__container::before {
-    width: 500px;
-    height: 500px;
-    top: -05px;
-    right: -120px;
+    display: none;
+    top: -20%;
+    width: 550px;
+    height: 550px;
+
+    /* top: -05px; */
+    /* right: -120px; */
   }
 
   .about__container::after {
+    display: none;
+    top: 30%;
     width: 300px;
     height: 400px;
-    top: 50px;
-    right: -30px;
+    /* top: 50px; */
+    /* right: -30px; */
   }
 }
 
 @media (max-width: 600px) {
-  .about__container::before {
+  /* .about__container::before {
     width: 450px;
     height: 450px;
     top: -05px;
@@ -214,16 +215,10 @@ export default {
     height: 350px;
     top: 50px;
     right: -30px;
-  }
-
-  .about-check__list {
-    margin-bottom: 87px;
-    max-width: 165px;
-  }
+  } */
 
   .about-check__item {
     padding-left: 24px;
-    min-height: 15px;
     line-height: 15px;
   }
 
@@ -239,10 +234,10 @@ export default {
 
 @media (max-width: 440px) {
   .about__container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
-  .about__container::before {
+  /* .about__container::before {
     width: 217px;
     height: 305px;
     right: -55px;
@@ -254,31 +249,6 @@ export default {
     height: 230px;
     right: -52px;
     top: 3px;
-  }
-
-  .about__logo {
-    margin-bottom: 22px;
-  }
-
-  .about-logo__title_left {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  .about-logo__title_right {
-    font-size: 20px;
-    line-height: 23px;
-  }
-
-  .about-logo__desc {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
-@media (max-width: 320px) {
-  .about__container {
-    padding: 0;
-  }
+  } */
 }
 </style>

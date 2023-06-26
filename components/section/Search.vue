@@ -4,26 +4,21 @@
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center">
-            <h1 class="heading" data-aos="fade-up">
-              Easiest way to find your dream blogger
-            </h1>
+            <h1 class="heading">Easiest way to find your dream blogger</h1>
             <form
               action="#"
               class="narrow-w form-search d-flex align-items-stretch mb-3"
-              data-aos="fade-up"
-              data-aos-delay="200"
             >
               <input
                 type="text"
                 class="form-control px-4"
                 placeholder="Your nickname or name bloggers."
-                autocomplete="off"
-                v-model.trim="searchInput"
+                v-model="searchInput"
               />
               <button
                 type="submit"
                 class="btn btn-primary"
-                @click.prevent="handlerClickSearch"
+                @click.prevent="handlerClickSearch()"
               >
                 Search
               </button>
@@ -121,8 +116,6 @@ export default {
 */
 
 .search-bar__desc {
-  margin-top: 1.1111rem;
-  margin-left: 1.4444rem;
   color: rgba(13, 13, 13, 0.61);
 }
 </style>

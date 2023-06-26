@@ -4,7 +4,9 @@
       <div class="error-text">
         <span>404</span>
         <p>PAGE NOT FOUND</p>
-        <p class="hmpg"><a href="/" class="back">Back To Home</a></p>
+        <p class="hmpg">
+          <nuxt-link to="/" class="back">Back To Home</nuxt-link>
+        </p>
       </div>
     </div>
   </div>
