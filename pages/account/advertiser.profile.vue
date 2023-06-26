@@ -157,6 +157,9 @@ export default {
   max-width: 9.2222rem;
   width: 100%;
 }
+.body__label {
+  color: var(--bs-gray-600);
+}
 
 .body__input {
   padding: 0.2778rem 0.6111rem;
@@ -166,22 +169,11 @@ export default {
   font-size: 0.8889rem;
   line-height: 1rem;
   text-align: center;
-  color: rgba(13, 13, 13, 0.61);
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-600);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
-  /* -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease; */
 }
-/* 
-.body__input:hover,
-.body__input:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-} */
 
 .body__cell-list {
   display: -webkit-box;
@@ -204,8 +196,8 @@ export default {
   min-height: 1.6667rem;
   font-size: 0.8889rem;
   line-height: 1.0556rem;
-  color: rgba(13, 13, 13, 0.61);
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-600);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   text-align: center;
@@ -216,7 +208,7 @@ export default {
 
 .cell-item__input_price:hover,
 .cell-item__input_price:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
+  border: 1.5px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -229,8 +221,8 @@ export default {
   min-height: 1.6667rem;
   font-size: 0.7778rem;
   line-height: 0.8889rem;
-  background: #f09e56;
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  background: var(--bs-secondary);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
 }
 
@@ -259,7 +251,7 @@ export default {
   margin-bottom: 0.5556rem;
   padding: 0.2222rem 0.5556rem;
   background: #f09e56;
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   -webkit-transition: border 0.3s ease;
@@ -273,7 +265,7 @@ export default {
 
 .body-change__btn:hover,
 .body-change__btn:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
+  border: 1.5px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -282,19 +274,19 @@ export default {
 .body-change__text {
   font-size: 0.8889rem;
   line-height: 1.0556rem;
-  color: rgba(13, 13, 13, 0.61);
+  color: var(--bs-gray-600);
 }
 
 .body-change__btn:hover > .body-change__text,
 .body-change__btn:active > .body-change__text {
-  color: #ff3600;
+  color: var(--bs-success);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .body-change__text_active {
-  color: #ff3600;
+  color: var(--bs-success);
   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   text-decoration-line: underline;
   -webkit-transition: all 0.3s ease;

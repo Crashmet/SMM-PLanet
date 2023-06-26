@@ -104,12 +104,11 @@ export default {
 .account__main {
   position: relative;
   overflow-x: auto;
-  max-width: 61.2222rem;
   width: 100%;
   padding: 2.2222rem 2.1111rem;
-  background: rgba(255, 119, 0, 0.15);
-  -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
-  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+
+  background-color: #efefefce;
+
   border-radius: 30px;
 }
 

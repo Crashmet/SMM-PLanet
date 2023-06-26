@@ -245,13 +245,13 @@ export default {
   font-size: 1.2778rem;
   line-height: 1.1667rem;
   text-decoration-line: underline;
-  color: #ff3600;
+  color: var(--bs-secondary);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header__btn_back {
   padding: 0.2222rem 0.4444rem;
-  border: 2px solid rgba(240, 158, 86, 0.58);
+  border: 2px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   transition: border 0.3s ease;
@@ -259,8 +259,8 @@ export default {
 
 .header__btn_back:hover,
 .header__btn_back:active {
-  color: #ff3600;
-  border: 2px solid rgba(240, 158, 86, 0.94);
+  color: var(--bs-success);
+  border: 2px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -302,8 +302,8 @@ export default {
   min-height: 1.6667rem;
   font-size: 0.8889rem;
   line-height: 1.0556rem;
-  color: rgba(13, 13, 13, 0.61);
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-600);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   -webkit-transition: border 0.3s ease;
@@ -313,7 +313,7 @@ export default {
 
 .body__input:hover,
 .body__input:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
+  border: 1.5px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -365,8 +365,8 @@ export default {
 .footer__button {
   width: 100%;
   height: 1.6667rem;
-  background: #f09e56;
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  background: var(--bs-secondary);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   font-weight: 500;
   font-size: 1rem;
@@ -375,12 +375,12 @@ export default {
 
 .footer__button_delete:hover,
 .footer__button_delete:active {
-  background: rgba(255, 54, 0, 0.8);
+  background: var(--bs-danger);
 }
 
 .footer__button_add:hover,
 .footer__button_add:active {
-  background: rgba(61, 200, 36, 0.438);
+  background: var(--bs-success);
 }
 
 .footer__link {
@@ -388,7 +388,7 @@ export default {
   line-height: 1.1667rem;
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
-  color: #ff3600;
+  color: var(--bs-success);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

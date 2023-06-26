@@ -44,7 +44,7 @@ export default {
 .select-menu__cell:active > .select-menu__text {
   display: inline-block;
   width: 100%;
-  color: #ff3600;
+  color: var(--bs-orange);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;

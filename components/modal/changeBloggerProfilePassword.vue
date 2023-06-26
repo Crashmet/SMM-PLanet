@@ -175,9 +175,9 @@ export default {
 .modal {
   position: relative;
   max-width: 33.3333rem;
-  background-color: #fff;
+  background-color: transparent;
   padding: 1.25rem 3.125rem;
-  border: 2px solid rgba(240, 158, 86, 0.58);
+  border: 2px solid var(--bs-secondary);
   border-radius: 20px;
 }
 
@@ -231,8 +231,8 @@ export default {
   min-height: 1.6667rem;
   font-size: 0.8889rem;
   line-height: 1.0556rem;
-  color: rgba(13, 13, 13, 0.61);
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-600);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   -webkit-transition: border 0.3s ease;
@@ -242,7 +242,7 @@ export default {
 
 .modal__input:hover,
 .modal__input:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
+  border: 1.5px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -257,8 +257,8 @@ export default {
   min-height: 1.6667rem;
   font-size: 0.8889rem;
   color: #fff;
-  background: #f09e56;
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  background: var(--bs-secondary);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
 }
 
@@ -268,12 +268,11 @@ export default {
   font-size: 0.8889rem;
   margin-left: 1.1111rem;
   margin-top: 0.3889rem;
-  color: rgba(255, 54, 0, 1);
+  color: var(--bs-orange);
 }
 
 @media (max-width: 480px) {
   .modal {
-    background-color: #fff;
     padding: 25px 50px;
     border-radius: 20px;
   }

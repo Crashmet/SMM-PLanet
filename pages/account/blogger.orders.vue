@@ -154,40 +154,6 @@ export default {
   position: relative;
 }
 
-.orders-change__btn {
-  margin-left: 0.5556rem;
-  padding: 6px 10.0008px;
-  background: #f09e56;
-  border: 1.5px solid rgba(240, 158, 86, 0.58);
-  border-radius: 10px;
-  background-color: transparent;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-
-.orders-change__btn:hover,
-.orders-change__btn:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-
-.orders-change__text {
-  font-size: 1rem;
-  line-height: 1.0556rem;
-  color: rgba(13, 13, 13, 0.9);
-}
-
-.orders-change__btn:hover > .orders-change__text,
-.orders-change__btn:active > .orders-change__text {
-  color: #ff3600;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 /* **** table **** */
 
 table {
@@ -203,13 +169,14 @@ thead tr th {
 }
 
 thead th {
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 1.1667rem;
+  color: var(--bs-gray-600);
 }
 
 thead th:nth-child(1) {
-  width: 12%;
+  width: 13%;
 }
 
 thead th:nth-child(2) {
@@ -242,11 +209,12 @@ td:nth-child(5) {
 }
 
 tbody tr {
-  border-bottom: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-600);
+  border-bottom: 1px solid var(--bs-secondary);
 }
 
 tbody tr:hover {
-  background: #f09e565e;
+  background: #f09e567c;
 }
 
 th,

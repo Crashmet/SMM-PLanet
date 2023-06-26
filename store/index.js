@@ -1,9 +1,9 @@
 export const state = () => ({
-  sessionid: null,
+  sessionid: "null",
 
-  csrftoken: null,
+  csrftoken: "null",
 
-  role: null,
+  role: "advertiser",
 
   socials: [
     { id: 1, name: "tiktok", selectName: "Tiktok" },

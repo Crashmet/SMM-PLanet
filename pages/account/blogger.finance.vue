@@ -1,7 +1,5 @@
 <template>
   <div class="blogger-finance">
-    <p class="blogger-finance__link">Изменить профиль</p>
-
     <div class="blogger-finance__body body">
       <ul class="body__row">
         <li class="body__cell body__cell-label">
@@ -60,14 +58,6 @@ export default {
 * Browsers: last 4 version
 */
 
-.blogger-finance__link {
-  margin-bottom: 1.6667rem;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  color: #ff3600;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .body__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +76,10 @@ export default {
   width: 100%;
 }
 
+.body__label {
+  color: var(--bs-gray-600);
+}
+
 .body__input {
   padding-left: 0.6111rem;
   max-width: 9.8333rem;
@@ -93,8 +87,8 @@ export default {
   min-height: 1.6667rem;
   font-size: 0.8889rem;
   line-height: 1.0556rem;
-  color: rgba(13, 13, 13, 0.61);
-  border: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-600);
+  border: 1px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   -webkit-transition: border 0.3s ease;
@@ -104,7 +98,7 @@ export default {
 
 .body__input:hover,
 .body__input:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
+  border: 1.5px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;

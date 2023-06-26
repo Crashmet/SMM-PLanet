@@ -1,7 +1,7 @@
 <template>
   <div class="profile-menu">
     <div class="profile-menu__block" v-if="users[0].isActive">
-      <h3 class="profile-menu__title">Пользовательское меню блогера</h3>
+      <h3 class="profile-menu__title">Blogger Custom Menu</h3>
 
       <nav class="profile-menu__row">
         <button
@@ -21,7 +21,7 @@
     </div>
 
     <div class="profile-menu__block" v-else>
-      <h3 class="profile-menu__title">Пользовательское меню рекламодателя</h3>
+      <h3 class="profile-menu__title">Advertiser Custom Menu</h3>
 
       <nav class="profile-menu__row">
         <button
@@ -102,11 +102,10 @@ export default {
 }
 
 .profile-menu__title {
-  margin-bottom: 1.3889rem;
-  font-size: 1.6667rem;
-  line-height: 1.9444rem;
-  color: rgba(255, 54, 0, 0.8);
-  /* text-shadow: 1px 1px 1px #d3792b; */
+  margin-bottom: 30px;
+  color: var(--bs-secondary);
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-weight: 600;
 }
 
 .profile-menu__row {
@@ -119,41 +118,39 @@ export default {
 
 .profile-menu__btn {
   margin-bottom: 0.5556rem;
-  padding: 0.3333rem 0.7778rem;
-  background: #f09e56;
-  border: 2px solid rgba(240, 158, 86, 0.58);
-  border-radius: 10px;
-  background-color: transparent;
+  background-color: var(--bs-secondary);
+  padding: 5px 18px;
+  border-radius: 20px;
+
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 
 .profile-menu__btn:not(:last-child) {
-  margin-right: 4.4444rem;
+  margin-right: 2.8571rem;
 }
 
 .profile-menu__btn:hover,
 .profile-menu__btn:active {
-  border: 2px solid rgba(240, 158, 86, 0.94);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
 }
 
 .profile-menu__text {
-  color: rgba(13, 13, 13, 0.61);
+  color: #fff;
 }
 
 .profile-menu__btn:hover > .profile-menu__text {
-  color: #ff3600;
+  color: var(--bs-orange);
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 .profile-menu__text_active {
-  color: #ff3600;
+  color: var(--bs-orange);
   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
   text-decoration-line: underline;
   -webkit-transition: all 0.3s ease;

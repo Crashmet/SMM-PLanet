@@ -368,8 +368,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.1111rem;
-  padding: 0 0.8rem;
-  width: 49.3334rem;
+  padding: 0 1rem;
 }
 
 .nav_right {
@@ -381,8 +380,8 @@ export default {
 
 .nav-change__btn {
   padding: 6px 10.0008px;
-  background: #f09e56;
-  border: 1.5px solid rgba(240, 158, 86, 0.58);
+  background: transparent;
+  border: 1.5px solid var(--bs-secondary);
   border-radius: 10px;
   background-color: transparent;
   -webkit-transition: border 0.3s ease;
@@ -392,7 +391,7 @@ export default {
 
 .nav-change__btn:hover,
 .nav-change__btn:active {
-  border: 1.5px solid rgba(240, 158, 86, 0.94);
+  border: 1.5px solid var(--bs-success);
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -406,7 +405,7 @@ export default {
 
 .nav-change__btn:hover > .nav-change__text,
 .nav-change__btn:active > .nav-change__text {
-  color: #ff3600;
+  color: var(--bs-red);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -418,8 +417,8 @@ export default {
   display: flex;
   align-items: center;
   width: 10rem;
-  border: 1.5px solid rgba(240, 158, 86, 0.58);
-  background: #ffffff;
+  border: 1.5px solid var(--bs-secondary);
+  background: transparent;
 }
 
 .nav-search__form,
@@ -432,20 +431,20 @@ export default {
   padding: 0 0.6667rem;
   height: 2rem;
   width: 7rem;
-  color: rgba(13, 13, 13, 0.61);
-  background: #ffffff;
+  color: var(--bs-gray-600);
+  background: transparent;
   font-size: 0.8889rem;
   line-height: 1.1667rem;
 }
 
 .nav-search__btn {
   padding: 0.7222rem 1.3rem;
-  background: rgba(255, 54, 0, 0.8);
+  background: var(--bs-secondary);
   transition: background 0.2s ease-in;
 }
 
 .nav-search__btn:hover {
-  background: rgba(255, 54, 0, 0.91);
+  background: var(--bs-success);
 }
 
 .nav-search__btn-arrow {
@@ -509,7 +508,7 @@ export default {
 }
 
 .page-numbers__btn_selected {
-  border-bottom: 3px solid rgba(255, 54, 0, 0.8);
+  border-bottom: 3px solid var(--bs-secondary);
 }
 
 /* **** TABLE **** */
@@ -579,12 +578,13 @@ td:nth-child(5) {
 }
 
 tbody tr {
-  border-bottom: 1px solid rgba(240, 158, 86, 0.58);
+  color: var(--bs-gray-700);
+  border-bottom: 1px solid var(--bs-secondary);
 }
 
 tbody tr:hover {
   cursor: pointer;
-  background: #f09e565e;
+  background: #f96e596b;
 }
 
 th,
@@ -606,7 +606,7 @@ td {
 @media (min-width: 980px) {
   .nav-pagination__btn:hover,
   .page-numbers__btn:hover {
-    border-bottom: 3px solid rgba(255, 54, 0, 0.8);
+    border-bottom: 3px solid var(--bs-secondary);
     background-color: transparent;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;

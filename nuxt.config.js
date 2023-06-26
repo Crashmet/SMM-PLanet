@@ -34,9 +34,6 @@ export default {
     ],
     script: [
       { hid: "stripe", src: "/js/bootstrap.bundle.min.js", defer: true },
-      // { hid: "stripe", src: "/js/custom.js", defer: true },
-      // { hid: "stripe", src: "/js/tiny-slider.js", defer: true },
-      // { hid: "stripe", src: "/js/navbar.js", defer: true },
       { hid: "stripe", src: "/js/counter.js", defer: true },
     ],
   },

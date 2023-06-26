@@ -84,7 +84,7 @@ export default {
   padding: 0.5556rem 2.2222rem;
   max-width: 20rem;
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 20px;
 }
 
@@ -107,10 +107,10 @@ export default {
 }
 
 .success {
-  border: 2px solid #4070f4;
+  border: 2px solid var(--bs-success);
 }
 
 .error {
-  border: 2px solid #f44040;
+  border: 2px solid var(--bs-danger);
 }
 </style>
